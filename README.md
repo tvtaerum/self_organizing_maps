@@ -50,13 +50,11 @@ The convergence displayed below generally fits with other classifications of nat
 While we quickly recognize if a face is typical f
 
 
-### Motivation for identifying differences between xrays of healthy lungs and those with pneumonia:
+### Motivation for creating Self Organizing Maps (SOMS):
 Considerable effort has been applied to building neural nets to discriminate between patients who are healthy and those patients with pneumonia based on x-rays.  An avenue which 
+
 ### Citations:
 <dl>
-<dt> Jason Brownlee, How to Develop a Conditional GAN (cGAN) From Scratch,</dt><dd> Available from https://machinelearningmastery.com/how-to-develop-a-conditional-generative-adversarial-network-from-scratch, accessed January 4th, 2020. </dd>
-<dt>Jason Brownlee, How to Explore the GAN Latent Space When Generating Faces, </dt><dd>Available from https://machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network, accessed January 13th, 2020. </dd>
-<dt>Iván de Paz Centeno, MTCNN face detection implementation for TensorFlow, as a PIP package,</dt><dd> Available from https://github.com/ipazc/mtcnn, accessed February, 2020. </dd>
 <dt>Jeff Heaton, Jeff Heaton's Deep Learning Course,</dt><dd> Available from https://www.heatonresearch.com/course/, accessed February, 2020. </dd>
 <dt>Wojciech Łabuński, X-ray - classification and visualisation</dt>  <dd> Available from 
 https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation, accessed March, 2020</dd>
@@ -67,7 +65,7 @@ https://github.com/torywalker/histogram-equalizer, accessed March, 2020</dd>
 ### Deliverables:
   1.  description of issues identified and resolved within specified limitations
   2.  code fragments illustrating the core of how an issue was resolved
-  3.  two Python programs which vectorize face and x-ray images and compare these images producing contrasts
+  3.  three Python programs which illustrate the use of SOMs in multidimensional arrrays
 
 ### Limitations and caveates:
 
