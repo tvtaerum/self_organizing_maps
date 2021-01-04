@@ -47,8 +47,6 @@ The convergence displayed below generally fits with other classifications of nat
 <img src="/images/SelfOrganizing_120_120.jpg" width="500" height="300">
 </p>
 
-While we quickly recognize if a face is typical f
-
 
 ### Motivation for creating Self Organizing Maps (SOMS):
 Considerable effort has been applied to building neural nets to discriminate between patients who are healthy and those patients with pneumonia based on x-rays.  An avenue which 
