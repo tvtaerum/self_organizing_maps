@@ -49,7 +49,7 @@ The convergence displayed below generally fits with other classifications of nat
 
 
 ### Motivation for creating Self Organizing Maps (SOMS):
-Considerable effort has been applied to building neural nets to discriminate between patients who are healthy and those patients with pneumonia based on x-rays.  An avenue which 
+Considerable effort is made to segment objects on the basis of features.  These streams illustrate outcomes where there are multiple dimensions in the results and dimensions may represent gradations of features.   
 
 ### Citations:
 <dl>
