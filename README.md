@@ -56,10 +56,11 @@ Considerable effort has been applied to building neural nets to discriminate bet
 ### Citations:
 <dl>
 <dt>Jeff Heaton, Jeff Heaton's Deep Learning Course,</dt><dd> Available from https://www.heatonresearch.com/course/, accessed February, 2020. </dd>
-<dt>Wojciech Łabuński, X-ray - classification and visualisation</dt>  <dd> Available from 
-https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation, accessed March, 2020</dd>
-<dt>Tory Walker, Histogram equalizer, </dt> <dd>Available from 
-https://github.com/torywalker/histogram-equalizer, accessed March, 2020</dd>
+<dt>Tory Walker, Histogram equalizer, </dt> <dd>Available from https://github.com/torywalker/histogram-equalizer, accessed March, 2020</dd>
+<dt>maps production from, </dt><dd>https://mohammadimranhasan.com/geospatial-data-mapping-with-python/</dd>
+<dt>maps using Python, </dt><dd>https://github.com/hasanbdimran/Mapping-in-python</dd>
+<dt>using geoPandas, </dt><dd>https://medium.com/@james.moody/creating-html-choropleths-using-geopandas-2b8ced9f1632</dd>
+<dt>chloropleth generators, </dt><dd>https://github.com/jmsmdy/html-choropleth-generator</dd>
 </dl>
 
 ### Deliverables:
@@ -77,46 +78,31 @@ https://github.com/torywalker/histogram-equalizer, accessed March, 2020</dd>
 ### Software and hardware requirements:
     - Python version 3.7.3
         - Numpy version 1.17.3
-        - Tensorflow with Keras version 2.0.0
         - Matplotlib version 3.0.3
+	- geopandas version
+	- os, sys, datetime, math, time
+	- urllib, webbrowser
+	- cartopy version 
     - Operating system used for development and testing:  Windows 10
 
 #### The process:
 
- Creating a cGAN as illustration, I provide limited working solutions to the following problems:
+ Creating three SOMs as illustration, I provide limited working solutions to the following problems:
 
 <ol type="1">
-  <li>can we generate images of female and male faces based solely on embedding labels</li>
-  <li>can we create images which point out the differences between typical female and male faces</li>
-  <li>can we generate images of x-rays differentiating between healthy lungs and those with bacterial and viral pneumonia</li>
-  <li>can we create images which point out the differneces betweeen healthy lungs and those with bacterial and viral pneumonia</li>
-  <li>cGan streams and data sources</li>
+  <li>classifying the class allopolyploidy Iris dataset in a 3D array</li>
+  <li>classifying oilpatch data in a 3D array</li>
+  <li>classifying nation's wealth and mapping iterations</li>
 </ol>
 
-
-### 1.  can we generate images of female and male faces by alternating only embeddings:
-
-As we saw in https://github.com/tvtaerum/cGANs_housekeeping, it is possible to both create and vertorize images where male versus female faces can be created simply by selecting a corresponding label/embedding.  
-
-### 2. can we create images which point out the differences between typical female and male faces:
-In making comparisons between female and male faces, there is considerable advantage to the fact the same weights can be used to create a male face and a female face and the only difference is the label/embedding.  
-
-### 3.  can we generate images of x-rays differentiating between healthy lungs and those with bacterial and viral pneumonia based solely on alternating embeddings?
-As we saw in https://github.com/tvtaerum/xray_housekeeping, it is possible to both create and vertorize images where healthy lungs versus viral pneumonia lungs versus bacterial pneumonia lungs can be created simply by selecting a corresponding label/embedding.  
-
-### 4.  can we create images which point out the differences betweeen healthy lungs and those with bacterial and viral pneumonia?
-In making comparisons between healthy lungs and lungs with viral or bacterial pneumonia, there is considerable advantage to the fact that the same weights can be used to create the different images and the only difference is the label/embedding.  
-
-###  5.  cGan streams and data sources:
-The following is an outline of the programming steps and Python code used to create the results observed in this repository.  There are two Python programs which are unique to this repository and five modelling (.h5) files.   
 
 The recommended folder structure looks as follows:
 <ul>
     <li>embedding_derived_heatmaps-master (or any folder name)</li>
 	<ul>
-	<li> files (also contains two Python programs - program run from here)</li>
+	<li> files (also contains three Python programs - program run from here)</li>
 	<ul>
-		<li> <b>celeb</b></li>
+		<li> <b>SOM map</b></li>
 		<ul>
 			<li> <b>label_results</b> (contains five .h5 generator model files)</li>
 		</ul>
@@ -129,7 +115,5 @@ The recommended folder structure looks as follows:
 	<li> images (contains images for README file)</li>
 	</ul>
 </ul>
-Those folders which are in <b>BOLD</b> need to be created. 
-All Python programs must be run from within the "file" directory. 
 
 #### LICENSE  <a href="/LICENSE">MIT license</a>
