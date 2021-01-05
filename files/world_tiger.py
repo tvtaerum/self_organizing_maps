@@ -2,13 +2,10 @@
 import time
 import numpy as np
 from matplotlib import pyplot as plt
-# from matplotlib import patches as patches
 import matplotlib.animation as animation
 import pandas as pd
 import sys
-import operator
 from matplotlib import gridspec
-
 import matplotlib.pyplot as plt
 import cartopy
 import cartopy.io.shapereader as shpreader
@@ -484,7 +481,6 @@ axes[1] = fig.add_subplot(gs[1],projection=ccrs.PlateCarree())
 axes[1].add_feature(cartopy.feature.OCEAN)
 axes[1].set_extent([-150, 60, -25, 60])
 
-# shpfilename = shpreader.natural_earth(resolution='110m',category='cultural',name='admin_0_countries')
 shpfilename = './cartopy/shapefiles/natural_earth/cultural/110m_admin_0_countries.shp'
 print("shpfilename: ", shpfilename)
 reader = shpreader.Reader(shpfilename)
